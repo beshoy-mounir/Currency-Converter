@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Currency Converter</title>
+        <!-- Icon -->
+        <link rel="Icon" href="Currency-Converter.ico" />
+        <!-- Style -->
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="wrapper">
+                <div class="container">
+                    <ul class="flex">
+                        <li class="flex"><img src="logo.png" alt="" /></li>
+                        <li><h1>Currency-Converter</h1></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="wrapper">
+                <div class="container flex">
+                    <!-- Card 1 -->
+                    <div class="card-wrapper">
+                        <div class="card-container flex">
+                            <div class="amount-block">
+                                <h2>Amount</h2>
+                                <input
+                                    type="text"
+                                    placeholder="1 By Default"
+                                    id="inputCurrency" />
+                                <img
+                                    src="switch.svg"
+                                    alt=""
+                                    id="switchCurrency" />
+                            </div>
+                            <div class="currency-block flex">
+                                <img
+                                    class="flag1"
+                                    id="flag1"
+                                    src="https://flagsapi.com/AE/shiny/32.png"
+                                    alt="" />
+                                <select name="" id="inputSelection"></select
+                                ><img
+                                    class="flag2"
+                                    id="flag2"
+                                    src="https://flagsapi.com/AE/shiny/32.png"
+                                    alt="" />
+                                <select name="" id="outputSelection"></select>
+                            </div>
+                            <div class="btn-block flex">
+                                <button id="btn">Convert</button>
+                            </div>
+                            <div class="result-block">
+                                <h3 id="result">1 AED = 1 AED</h3>
+                                <h4 id="update"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="currency.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
